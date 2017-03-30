@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tizen Mobile Web Basic Template" />
+
+    <title>Tizen Mobile Web Basic Application</title>
+    <link rel="stylesheet" href="./lib/tau/mobile/theme/default/tau.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/alarm_style.css" />
+</head>
+
+<body>
+    <div class="ui-page ui-active-page" id="main-page">
+        <div class="ui-header" data-position="fixed">
+            <h1 id="page-header-title">Alarm List</h1>
+        </div>
+        <div class="ui-content">
+			<div id="alarm-list" class="ui-listview"></div>
+            <div id="ui-floatingaction" class="ui-floatingactions">
+	            <div style="line-height:57px;">
+	                <div id="btn-add-alarm-page" style="vertical-align: middle; margin-right: 5px;" class="icon-add icon-active"></div>
+	            </div>
+            </div>
+        </div>
+
+ 		<div id="main-footer" class="ui-footer" style="background-color:rgba(46, 139, 153, 1)">
+        	<div class="row-grid">
+                <div class="col-grid-3" style="text-align:center">
+                    <a href="#" class="icon-remove icon-active" id="btn-del-alarms"></a>
+                    <div class="ui-footer-btn-text" style="margin-top:-5px;">Remove</div>
+                </div>
+                <div class="col-grid-3" style="text-align:center;">
+                </div>
+                <div class="col-grid-3" style="text-align:center;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+ <div class="ui-page" id="modify-alarm-page" data-role="page">
+        <div class="ui-header">
+            <h1 id="mod-alarm-header-text"></h1>
+        </div>
+        <div class="ui-content">
+            <div data-role="fieldcontain">
+                
+                <p style="margin: 10px 0px 0px 0px;">Time</p>
+                <input type="time" name="time" class="picker" id="timepicker" value="" />
+                <p style="margin: 10px 0px 0px 0px;">Date</p>
+                <input type="date" name="date" class="picker" id="datepicker" value="" />
+                <p style="margin: 10px 0px 0px 0px;">Topic</p>
+                <input type="text" name="textarea" id="textarea" placeholder="Input text here"/>
+
+            </div>
+
+        </div>
+        <div class="ui-footer">
+            <button id="btn-mod-alarm-add-cancel">Cancel</button>
+            <button id="btn-set-alarm">Set Alarm</button>
+        </div>
+    </div>
+    <div class="ui-page" id="alarmActive">
+        <div class="ui-header">
+            <h1>Event</h1>
+        </div>
+        <div class="ui-content">
+            <p>This is page two</p>
+            <button id="btn-alarm-active-back">Stop</button>
+            <audio id="alarm-audio"></audio>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="lib/jquery.js"></script>
+    <script type="text/javascript" src="lib/tau/mobile/js/tau.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/alarm_inxddb_prot.js"></script>
+    <script src="js/alarm_tizen_prot.js"></script>
+    <script src="js/alarm_view_prot.js"></script>
+    <script src="js/alarm_main.js"></script>
+</body>
+
+</html>

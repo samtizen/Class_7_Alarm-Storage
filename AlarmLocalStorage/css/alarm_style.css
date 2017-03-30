@@ -1,0 +1,103 @@
+.row-grid {
+	margin:0px;
+	padding-top: 7px;
+	width:100%;
+}
+.col-grid-3 {
+	display:inline-block; 
+	margin:0px; 
+	width:32%;
+}
+.icon-del {
+  	display: inline-block;
+  	width: 32px;
+  	height: 32px;
+  	background-color: white;
+  	-webkit-mask-size: 32px 32px;
+  	-webkit-mask-image: url('../lib/tau/mobile/theme/default/images/page/00_icon_delete.png');
+	
+}
+
+.icon-active {
+   	background-color: white;
+   	cursor: pointer;
+}
+
+.icon-active:active {
+   	background-color: #5dd;
+   	cursor: pointer;
+}
+
+.icon-disabled {
+	background-color: #a8a8a8;
+}
+.btn-text-disabled {
+	color: #a8a8a8 !important;
+}
+.icon-add {
+  	display: inline-block;
+  	width: 32px;
+  	height: 32px;
+  	background-color: white;
+  	-webkit-mask-size: 32px 32px;
+  	-webkit-mask-image: url('../images/add-button.png');
+}
+.icon-remove {
+  	display: inline-block;
+  	width: 32px;
+  	height: 32px;
+  	background-color: white;
+  	-webkit-mask-size: 32px 32px;
+  	-webkit-mask-image: url('../images/rubbish-bin.png');
+}
+
+.ui-footer {
+  	height: 65px;
+}
+.ui-footer-btn-text {
+	color: white;
+	font-size: 14px; 
+}
+.ui-floatingactions {
+  	bottom: 25%;
+}
+.iu-content {
+	position:relative;
+	top: 56px;
+}
+.picker {
+	font-size: 2em; 
+	background-color: white; 
+	width:100%; 
+	text-align: center;
+}
+.alarm-topic-text {
+	font-size: 4em; 
+}
+.ui-alarm-item {
+	overflow: auto !important;
+	clear:both;
+	padding: 5px 10px 5px 10px;
+}
+
+.ui-alarm-date {
+	lear: both; 
+	margin:0px;
+	font-size: 0.8em;
+}
+.ui-alarm-data {
+	margin:0px;
+	padding:0px;
+	width:80%; 
+	float:left;
+}
+.ui-alarm-checker {
+	text-align: right; 
+	float:right;
+	margin:0px;
+	padding:0px;
+	width:15%;
+}
+#ui-floatingaction {
+	display: none;
+}
